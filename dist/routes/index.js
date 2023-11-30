@@ -6,6 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
 const sectors_1 = __importDefault(require("./sectors"));
 const router = (0, express_1.Router)();
-router.get("/", (_, res) => res.status(200));
+router.get("/", (_, res) => res.status(200).json("pong!"));
 router.use("/api", sectors_1.default);
 exports.default = router;
