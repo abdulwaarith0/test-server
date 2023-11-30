@@ -9,6 +9,6 @@ const app: Application = express();
 app.use(express.json());
 app.use(cors());
 app.use(morgan(NODE_ENV === "production" ? "combined" : "dev"));
-app.use("/api/", routes);
+app.use(routes);
 
 export default app;
