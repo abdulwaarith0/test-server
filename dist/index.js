@@ -19,7 +19,7 @@ const database_1 = require("./database");
 const port = constants_1.PORT || 8080;
 app_1.default.listen(port, () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        console.log(`Server listening on ${port}`);
+        console.log(`Server listening on port ${port}`);
         (0, database_1.connectMongoDB)();
     }
     catch (error) {
