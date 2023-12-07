@@ -1,8 +1,8 @@
 import { Router } from "express";
 import {
-	addNewEntryHandler,
-	getAllEntriesHandler,
-	getEntryHandler,
+  addNewEntryHandler,
+  getAllEntriesHandler,
+  getEntryHandler,
 } from "../../controllers";
 
 const router = Router();

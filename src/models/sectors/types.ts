@@ -1,9 +1,8 @@
 export interface ISector {
-	fullName: string;
 	name: string;
 	sector: {
 		name: string;
-		industry?: {
+		industry: {
 			name: string;
 			subIndustry?: string;
 		};

@@ -47,6 +47,7 @@ export const addNewEntryHandler = async (
 
 		res.status(response.code).json(response);
 	} catch (error: any) {
+		console.log(error);
 		const result = getErrorResponse(error);
 		res.status(result.code).json(result);
 	}

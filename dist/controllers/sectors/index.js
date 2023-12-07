@@ -45,6 +45,7 @@ const addNewEntryHandler = (req, res) => __awaiter(void 0, void 0, void 0, funct
         res.status(response.code).json(response);
     }
     catch (error) {
+        console.log(error);
         const result = (0, constants_1.getErrorResponse)(error);
         res.status(result.code).json(result);
     }
